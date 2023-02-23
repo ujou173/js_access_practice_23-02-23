@@ -15,7 +15,14 @@
     <li>items-5</li>
   </ul>
   <script>
+    // 다섯개의 <li> 요소가 있을 때
+    // 해당 <li> '모두'에 파란색 색상을 부여하고자 한다. 어떤 방법이 있는가? 
     let menu = document.getElementById('menu');
+    console.dir(menu);
+    console.log(menu.children[0]);
+    for(i = 0; i < menu.children.length; i++) {
+      menu.children[i].style.backgroundColor = "blue"
+    }
   </script>
 </body>
 </html>
